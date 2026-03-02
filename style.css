@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background circles */
+.circle {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#00d2ff, #3a7bd5);
+}
+.circle:first-child { top: 10%; left: 20%; }
+.circle:last-child { bottom: 10%; right: 20%; background: linear-gradient(#ff512f, #dd2476); }
+
+.profile-card {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h2 {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: #00d2ff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    color: #eee;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.contact-info p { margin: 8px 0; }
+.contact-info i { margin-right: 10px; color: #00d2ff; }
+
+.social-links {
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00d2ff;
+}
+
+.msg-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    color: #1e3c72;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.msg-btn:hover {
+    background: #00d2ff;
+    color: #fff;
+}
